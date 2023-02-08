@@ -3,3 +3,4 @@
 2-bring_me_home - Script that changes the woring dir to user's home dir
 3-listfiles - Script that displays the current directory contents in long format
 4- listmorefiles - Diplay current directory contents, including hidden files (starting with .)
+5-listfilesdigitonly - Dispal current directory contents with user and group IDs numerically
