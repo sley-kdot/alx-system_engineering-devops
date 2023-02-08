@@ -6,3 +6,4 @@
 5-listfilesdigitonly - Dispal current directory contents with user and group IDs numerically
 6-firstdirectory - Script tthat creates a dir. name my_first_directory in the /tmp/ dir.
 7-movethatfile - Move the file betty from /tmp/ to /tmp/my_first_directory
+8-firstdelete - Delete the file betty from /tmp/my_first_directory
