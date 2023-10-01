@@ -3,8 +3,10 @@
 hour=0
 while [ $hour -le 12 ]; do
 	echo "Hour: $hour"
-	for i in {1..59}; do
-		echo "$i"
+	minute=1
+	while [ $minute -le 59 ]; do
+		echo "$minute"
+		((minute++))
 	done
-	hour=$((hour + 1))
+	((hour++))
 done
