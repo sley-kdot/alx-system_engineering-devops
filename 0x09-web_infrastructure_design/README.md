@@ -12,3 +12,4 @@ For this project, we expect you to look at these concepts:
 
 ## Authors
 [Nnamdi Kingsley Okonmah](https://github.com/sley-kdot)
+[Boniface Muga](https://github.com/MungaSoftwiz)
