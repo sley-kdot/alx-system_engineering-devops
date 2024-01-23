@@ -9,5 +9,5 @@ file_line {'make use of private key':
 file_line {'refuse to authenticate using a passwd':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => 'PasswordAuthentication',
+  line   => 'PasswordAuthentication no',
 }
