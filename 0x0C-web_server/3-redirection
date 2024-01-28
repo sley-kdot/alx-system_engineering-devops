@@ -7,7 +7,7 @@ sudo ufw allow 'Nginx HTTP'
 
 echo 'Hello World!' | sudo tee /var/www/html/index.html
 
-NEW_LOCATION="\\\n\n\tlocation = /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+NEW_LOCATION="\\\n\n\tlocation = /redirect_me/ {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bakup
 sudo sed -i '47i'"$NEW_LOCATION" /etc/nginx/sites-available/default
 
