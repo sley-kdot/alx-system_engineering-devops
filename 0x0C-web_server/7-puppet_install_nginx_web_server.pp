@@ -2,9 +2,15 @@
 
 package { 'nginx':
     ensure => installed,
-      name => 'nginx',
+    name   => 'nginx',
 }
 
-file { '/var/www/html/index.html':
-  content => 'Hello World!',
+exec { 'installer':
+  command   => 'sudo apt -y update; sudo apt -y install nginx',
+  provider  => shell,
+}
+
+exec { 'page':
+  command  => "echo 'Hello World!' | sudo tee /var/www/html/index.html > /dev/null",
+  provider => shell,
 }
