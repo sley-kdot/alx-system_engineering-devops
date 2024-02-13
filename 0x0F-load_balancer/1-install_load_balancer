@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+# install and configure HAproxy
+
+sudo apt-get -y updates
+sudo apt-get -y install haproxy=2.8.\*
+
+echo "
+frontend rattpack.tech
+    bind *:80
+    default_backend rattpack_backend
+
+backend rattpack_backend
+    balance roundrobin
+    server 286873-web-01 100.25.161.45:80 check
+    server 286873-web-02 100.27.0.133:80 check
+" | sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null
+
+sudo service haproxy restart
