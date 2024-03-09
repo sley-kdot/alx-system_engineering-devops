@@ -13,8 +13,8 @@ frontend rattpack.tech
 
 backend rattpack_backend
     balance roundrobin
-    server 286873-web-01 100.25.161.45:80 check
-    server 286873-web-02 100.27.0.133:80 check
+    server 286873-web-01 54.83.66.203:80 check
+    server 286873-web-02 100.26.227.228:80 check
 " | sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null
 
 sudo service haproxy start
