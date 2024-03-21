@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+
+dns_funct() {
+	dig $1 | grep -A1 'ANSWER SECTION:' | awk -F ',' '{print $1 "\t" $2}'
+	#echo "The subdomain [$1] is a [RECORD_TYPE] record and points to [DESTINATION]"
+}
+dns_funct $1
