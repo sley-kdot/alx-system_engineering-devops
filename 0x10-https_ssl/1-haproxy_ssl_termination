@@ -41,5 +41,5 @@ frontend rattpack.tech
 
 backend rattpack_backend
         balance roundrobin
-        server 286873-web-01 54.83.66.203:80 check
-        server 286873-web-02 100.26.227.228:80 check
+        server 286873-web-01 54.197.120.203:80 check
+        server 286873-web-02 3.94.213.100:80 check
