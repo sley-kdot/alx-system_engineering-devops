@@ -14,7 +14,6 @@ if __name__ == "__main__":
     completed_params = {"userId": employee_id, "completed": "true"}
     todos = requests.get(f"{url}todos", params={"userId": employee_id}).json()
     complete = requests.get(f"{url}todos", params=completed_params).json()
-    
     file_name = f"{employee_id}.csv"
 
     new_list = []
