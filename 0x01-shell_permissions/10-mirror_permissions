@@ -1,0 +1,2 @@
+#!/bin/bahs
+chmod --reference=olleh hello
