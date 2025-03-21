@@ -1,2 +1,2 @@
 #!/bin/bash
-nmv [A-Z]* /tmp/u
+nmv [[:upper:]]* /tmp/u
