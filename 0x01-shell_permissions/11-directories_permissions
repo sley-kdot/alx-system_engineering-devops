@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x 11-directories_permissions
+find . -type d -exec chmod 755 {} \;
