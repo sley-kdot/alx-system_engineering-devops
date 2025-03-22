@@ -1,7 +1,2 @@
 #!/bin/bash
-
-for dir in $(find . -type d)
-do
-    chmod 755 "$dir"
-done
-
+chmod ugo+x */
